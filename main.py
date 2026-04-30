@@ -1,1 +1,6 @@
-print("Hola mundo") 
+from fastapi import FastAPI
+from app.routes.example import router
+
+app = FastAPI()
+
+app.include_router(router)
